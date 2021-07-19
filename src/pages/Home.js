@@ -1,20 +1,15 @@
 import React from 'react';
 import Header from "../components/Header";
-import { Github, House, Stopwatch } from "react-bootstrap-icons";
+import {Container} from "react-bootstrap";
+import CreatePostForm from "../components/CreatePostForm";
 
 const Home = () => {
     return (
         <div>
             <Header/>
-            <div className="p-5 mb-4 bg-light rounded-3">
-                <div className="container py-5">
-                    <h1 className="display-5 fw-bold">Home page <House/> </h1>
-                    <p className="col-md-8 fs-4">Save time <Stopwatch/> with the ready-to-use React template!</p>
-                    <a href="https://github.com/vassilidev/react-template" className="btn btn-primary btn-lg">
-                        <Github/> Git repo
-                    </a>
-                </div>
-            </div>
+            <Container className="bg-light p-4">
+                <CreatePostForm/>
+            </Container>
         </div>
     );
 };
